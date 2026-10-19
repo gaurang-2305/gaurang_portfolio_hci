@@ -8,7 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "assets": "node scripts/process-assets.mjs",
-    "test": "node --test scripts/sus-score.test.mjs"
+    "test": "node --test scripts/sus-score.test.mjs",
+    "predeploy": "npm run assets && npm run build",
+    "deploy": "gh-pages -d dist --nojekyll"
   },
   "dependencies": {
     "@fontsource/fraunces": "^5.1.1",
@@ -27,6 +29,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
