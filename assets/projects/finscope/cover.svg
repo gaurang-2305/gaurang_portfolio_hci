@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="100%" height="100%">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0E1020"/>
+        <stop offset="100%" stop-color="#161A30"/>
+      </linearGradient>
+      <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFB547" stop-opacity="0.4"/>
+        <stop offset="100%" stop-color="#FFB547" stop-opacity="0.0"/>
+      </linearGradient>
+    </defs>
+    
+    <rect width="1280" height="800" fill="url(#bgGrad)"/>
+    
+    <!-- Top Mockup Window Header -->
+    <rect x="30" y="30" width="1220" height="48" rx="8" fill="#1C213E" stroke="#2A3050"/>
+    <circle cx="55" cy="54" r="6" fill="#FF5F56"/>
+    <circle cx="75" cy="54" r="6" fill="#FFBD2E"/>
+    <circle cx="95" cy="54" r="6" fill="#27C93F"/>
+    <rect x="240" y="42" width="800" height="24" rx="4" fill="#0E1020" stroke="#2A3050"/>
+    <text x="640" y="58" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB" text-anchor="middle">https://finscope.internal/analytics/10-K/AAPL/2025</text>
+    <rect x="1110" y="42" width="120" height="24" rx="4" fill="#FFB547" fill-opacity="0.15" stroke="#FFB547" stroke-width="0.8"/>
+    <text x="1170" y="58" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#FFB547" text-anchor="middle">SEC EDGAR LIVE</text>
+    
+    <!-- Main Window Canvas -->
+    <rect x="30" y="90" width="1220" height="680" rx="8" fill="#121528" stroke="#2A3050"/>
+    
+    <!-- Left Sidebar -->
+    <rect x="30" y="90" width="220" height="680" fill="#161A30" stroke="#2A3050"/>
+    <text x="50" y="130" font-family="'Fraunces', serif" font-size="18" font-weight="bold" fill="#FFB547">FinScope // AI</text>
+    <text x="50" y="150" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A9AECB">RAG &amp; RATIO ENGINE</text>
+    
+    <rect x="45" y="175" width="190" height="36" rx="4" fill="#232A4E" stroke="#FFB547" stroke-width="1"/>
+    <text x="60" y="198" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#F2EFE8">&bull; 10-K Ingestion</text>
+    <rect x="45" y="220" width="190" height="36" rx="4" fill="transparent"/>
+    <text x="60" y="243" font-family="'Inter', sans-serif" font-size="12" fill="#A9AECB">&bull; ChromaDB Chatbot</text>
+    <rect x="45" y="265" width="190" height="36" rx="4" fill="transparent"/>
+    <text x="60" y="288" font-family="'Inter', sans-serif" font-size="12" fill="#A9AECB">&bull; Multi-Company Ratio</text>
+    <rect x="45" y="310" width="190" height="36" rx="4" fill="transparent"/>
+    <text x="60" y="333" font-family="'Inter', sans-serif" font-size="12" fill="#A9AECB">&bull; Distress ML Risk</text>
+    
+    <!-- Central Metric Tiles -->
+    <!-- Tile 1 -->
+    <rect x="270" y="115" width="220" height="110" rx="6" fill="#1A1F3B" stroke="#2A3050"/>
+    <text x="290" y="142" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">CURRENT RATIO</text>
+    <text x="290" y="180" font-family="'Fraunces', serif" font-size="28" font-weight="bold" fill="#F2EFE8">2.45x</text>
+    <text x="290" y="205" font-family="'JetBrains Mono', monospace" font-size="11" fill="#27C93F">+14.2% vs GAAP Peer</text>
+    
+    <!-- Tile 2 -->
+    <rect x="510" y="115" width="220" height="110" rx="6" fill="#1A1F3B" stroke="#2A3050"/>
+    <text x="530" y="142" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">DEBT TO EQUITY</text>
+    <text x="530" y="180" font-family="'Fraunces', serif" font-size="28" font-weight="bold" fill="#F2EFE8">0.38</text>
+    <text x="530" y="205" font-family="'JetBrains Mono', monospace" font-size="11" fill="#27C93F">Low Solvency Risk</text>
+
+    <!-- Tile 3 -->
+    <rect x="750" y="115" width="220" height="110" rx="6" fill="#1A1F3B" stroke="#2A3050"/>
+    <text x="770" y="142" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">ROIC (CAPITAL)</text>
+    <text x="770" y="180" font-family="'Fraunces', serif" font-size="28" font-weight="bold" fill="#FFB547">18.4%</text>
+    <text x="770" y="205" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFB547">Top Decile Margin</text>
+
+    <!-- Tile 4 -->
+    <rect x="990" y="115" width="235" height="110" rx="6" fill="#1A1F3B" stroke="#2A3050"/>
+    <text x="1010" y="142" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">DISTRESS PROBABILITY</text>
+    <text x="1010" y="180" font-family="'Fraunces', serif" font-size="28" font-weight="bold" fill="#27C93F">1.2%</text>
+    <text x="1010" y="205" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">Scikit-learn Model</text>
+    
+    <!-- Large Chart / Table Section -->
+    <rect x="270" y="245" width="580" height="495" rx="6" fill="#161A30" stroke="#2A3050"/>
+    <text x="295" y="280" font-family="'Fraunces', serif" font-size="16" font-weight="bold" fill="#F2EFE8">Normalized 5-Year Income &amp; Balance Disclosures</text>
+    <text x="295" y="300" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A9AECB">Multi-Engine Ingestion (PyMuPDF + pdfplumber) &bull; GAAP Normalized</text>
+    
+    <!-- Synthetic Line Chart -->
+    <path d="M 300 480 Q 420 380, 520 420 T 700 340 T 820 310 L 820 540 L 300 540 Z" fill="url(#chartGrad)"/>
+    <path d="M 300 480 Q 420 380, 520 420 T 700 340 T 820 310" fill="none" stroke="#FFB547" stroke-width="3"/>
+    
+    <!-- Table Grid Rows -->
+    <rect x="290" y="565" width="540" height="32" rx="4" fill="#1E2342"/>
+    <text x="310" y="585" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F2EFE8">Operating Revenue</text>
+    <text x="790" y="585" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFB547" text-anchor="end">$383,285M</text>
+    
+    <rect x="290" y="605" width="540" height="32" rx="4" fill="#161A30"/>
+    <text x="310" y="625" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F2EFE8">Operating Income (EBIT)</text>
+    <text x="790" y="625" font-family="'JetBrains Mono', monospace" font-size="11" fill="#27C93F" text-anchor="end">$114,301M</text>
+
+    <rect x="290" y="645" width="540" height="32" rx="4" fill="#1E2342"/>
+    <text x="310" y="665" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F2EFE8">Cash from Operations</text>
+    <text x="790" y="665" font-family="'JetBrains Mono', monospace" font-size="11" fill="#27C93F" text-anchor="end">$110,543M</text>
+
+    <!-- Right Side: Interactive RAG Footnote Chatbot -->
+    <rect x="870" y="245" width="355" height="495" rx="6" fill="#161A30" stroke="#2A3050"/>
+    <rect x="870" y="245" width="355" height="45" rx="6" fill="#1E2342" stroke="#2A3050"/>
+    <text x="890" y="272" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFB547">ChromaDB RAG Assistant</text>
+    
+    <!-- Chat bubbles -->
+    <rect x="890" y="310" width="315" height="50" rx="6" fill="#252D57"/>
+    <text x="905" y="332" font-family="'Inter', sans-serif" font-size="11" fill="#F2EFE8">Query: "What are the debt maturities</text>
+    <text x="905" y="348" font-family="'Inter', sans-serif" font-size="11" fill="#F2EFE8">for senior notes beyond 2026?"</text>
+
+    <rect x="890" y="380" width="315" height="110" rx="6" fill="#1A1F3B" stroke="#FFB547" stroke-width="0.8"/>
+    <text x="905" y="402" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFB547">RETRIEVED &bull; Note 8 (Debt Schedule):</text>
+    <text x="905" y="422" font-family="'Inter', sans-serif" font-size="11" fill="#A9AECB">"Aggregate maturities of long-term debt</text>
+    <text x="905" y="440" font-family="'Inter', sans-serif" font-size="11" fill="#A9AECB">include $10.5B due in 2027 and $8.2B</text>
+    <text x="905" y="458" font-family="'Inter', sans-serif" font-size="11" fill="#A9AECB">due in 2028 under fixed coupons."</text>
+    <text x="905" y="478" font-family="'JetBrains Mono', monospace" font-size="9" fill="#27C93F">Similarity Score: 0.894 (ChromaDB cosine)</text>
+    
+    <!-- Input Box -->
+    <rect x="890" y="675" width="315" height="45" rx="6" fill="#0E1020" stroke="#2A3050"/>
+    <text x="910" y="702" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A9AECB">Ask a query over 10-K filings...</text>
+  </svg>

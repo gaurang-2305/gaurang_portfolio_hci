@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="100%" height="100%">
+    <defs>
+      <linearGradient id="oceanBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#08101E"/>
+        <stop offset="100%" stop-color="#0B1A2E"/>
+      </linearGradient>
+    </defs>
+    
+    <rect width="1280" height="800" fill="url(#oceanBg)"/>
+    
+    <!-- Top Window Chrome -->
+    <rect x="30" y="30" width="1220" height="48" rx="8" fill="#0F243E" stroke="#1D3E64"/>
+    <circle cx="55" cy="54" r="6" fill="#FF5F56"/>
+    <circle cx="75" cy="54" r="6" fill="#FFBD2E"/>
+    <circle cx="95" cy="54" r="6" fill="#27C93F"/>
+    <rect x="240" y="42" width="800" height="24" rx="4" fill="#08101E" stroke="#1D3E64"/>
+    <text x="640" y="58" font-family="'JetBrains Mono', monospace" font-size="11" fill="#7FA9D6" text-anchor="middle">https://floatchat.ocean-intel.org/argo/explorer</text>
+    <rect x="1110" y="42" width="120" height="24" rx="4" fill="#00D2FF" fill-opacity="0.15" stroke="#00D2FF" stroke-width="0.8"/>
+    <text x="1170" y="58" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#00D2FF" text-anchor="middle">470+ FLOATS ACTIVE</text>
+
+    <!-- Main Workspace -->
+    <rect x="30" y="90" width="1220" height="680" rx="8" fill="#081424" stroke="#1D3E64"/>
+    
+    <!-- Left Leaflet Map Visualization Viewport -->
+    <rect x="50" y="110" width="780" height="480" rx="6" fill="#0A1828" stroke="#1D3E64"/>
+    
+    <!-- Stylized World Map Continents in Dark Cyan -->
+    <path d="M 90 200 Q 140 180, 200 210 Q 240 260, 220 320 Q 180 350, 120 310 Z" fill="#132B45"/>
+    <path d="M 230 330 Q 270 340, 290 400 Q 280 460, 240 450 Q 220 400, 230 330 Z" fill="#132B45"/>
+    <path d="M 400 170 Q 480 160, 520 200 Q 480 250, 430 240 Z" fill="#132B45"/>
+    <path d="M 440 260 Q 500 270, 520 340 Q 480 420, 430 360 Z" fill="#132B45"/>
+    <path d="M 580 180 Q 720 170, 760 260 Q 700 320, 620 280 Z" fill="#132B45"/>
+    <path d="M 680 360 Q 750 370, 740 430 Q 690 430, 680 360 Z" fill="#132B45"/>
+    
+    <!-- ARGO Float Coordinate Points & Radar Circles -->
+    <circle cx="340" cy="270" r="14" fill="#00D2FF" fill-opacity="0.2"/>
+    <circle cx="340" cy="270" r="4" fill="#00D2FF"/>
+    <circle cx="370" cy="330" r="18" fill="#FFB547" fill-opacity="0.2"/>
+    <circle cx="370" cy="330" r="4" fill="#FFB547"/>
+    <circle cx="490" cy="380" r="14" fill="#00D2FF" fill-opacity="0.2"/>
+    <circle cx="490" cy="380" r="4" fill="#00D2FF"/>
+    <circle cx="620" cy="340" r="14" fill="#00D2FF" fill-opacity="0.2"/>
+    <circle cx="620" cy="340" r="4" fill="#00D2FF"/>
+    <circle cx="280" cy="240" r="4" fill="#00D2FF"/>
+    <circle cx="560" cy="220" r="4" fill="#00D2FF"/>
+
+    <!-- Map Info Overlay -->
+    <rect x="70" y="130" width="260" height="60" rx="4" fill="#08101Ecc" stroke="#1D3E64"/>
+    <text x="85" y="152" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#00D2FF">ARGO GLOBAL ARRAY</text>
+    <text x="85" y="172" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7FA9D6">Profile Depth: 0 - 2000m &bull; Active CTD</text>
+
+    <!-- Bottom NL2SQL Prompt Bar & AST Inspection Block -->
+    <rect x="50" y="605" width="780" height="145" rx="6" fill="#0E2138" stroke="#1D3E64"/>
+    <text x="70" y="630" font-family="'Inter', sans-serif" font-size="12" font-weight="bold" fill="#00D2FF">Conversational NL2SQL Input:</text>
+    <text x="70" y="650" font-family="'Inter', sans-serif" font-size="13" fill="#F2EFE8">"Show salinity anomalies exceeding 2.5 sigma near the equator in the Indian Ocean"</text>
+    
+    <rect x="70" y="670" width="740" height="65" rx="4" fill="#08101E" stroke="#1D3E64"/>
+    <text x="85" y="690" font-family="'JetBrains Mono', monospace" font-size="10" fill="#27C93F">&#10003; AST VALIDATION PASSED (sqlglot node inspection: SelectStatement only)</text>
+    <text x="85" y="712" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7FA9D6">SELECT float_id, lat, lon, z_score FROM argo_measurements WHERE abs(z_score) &gt; 2.5 AND abs(lat) &lt; 5.0;</text>
+
+    <!-- Right Side: Depth CTD Chart & Anomaly Panel -->
+    <rect x="850" y="110" width="380" height="640" rx="6" fill="#0B1A2E" stroke="#1D3E64"/>
+    <text x="875" y="145" font-family="'Fraunces', serif" font-size="18" font-weight="bold" fill="#F2EFE8">Float #2903348 Profile</text>
+    <text x="875" y="165" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7FA9D6">Sensor: Sea-Bird CTD 41CP &bull; 49 Tests Passing</text>
+
+    <!-- Anomaly Curve -->
+    <rect x="875" y="190" width="330" height="260" rx="4" fill="#081424" stroke="#1D3E64"/>
+    <text x="895" y="215" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A9AECB">TEMPERATURE (&deg;C) VS DEPTH (m)</text>
+    <path d="M 900 240 Q 940 280, 980 340 T 1160 410" fill="none" stroke="#FF5F56" stroke-width="2.5"/>
+    <text x="1100" y="280" font-family="'JetBrains Mono', monospace" font-size="9" fill="#FF5F56">Thermocline Spike</text>
+
+    <!-- Diagnostic metrics -->
+    <rect x="875" y="470" width="330" height="60" rx="4" fill="#0E2138"/>
+    <text x="895" y="495" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7FA9D6">SALINITY Z-SCORE</text>
+    <text x="895" y="518" font-family="'Fraunces', serif" font-size="20" font-weight="bold" fill="#FFB547">+2.84 &sigma; (Significant Anomaly)</text>
+
+    <rect x="875" y="545" width="330" height="80" rx="4" fill="#0E2138"/>
+    <text x="895" y="570" font-family="'JetBrains Mono', monospace" font-size="10" fill="#7FA9D6">DUAL PERSONA WORKFLOW</text>
+    <text x="895" y="595" font-family="'Inter', sans-serif" font-size="11" fill="#F2EFE8">Switched to: Researcher View (Raw CTD calibration stream active)</text>
+  </svg>
