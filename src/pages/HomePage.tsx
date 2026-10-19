@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Hero } from '../components/Hero';
 import { AboutSection } from '../components/AboutSection';
 import { AcademicSection } from '../components/AcademicSection';
@@ -9,10 +9,23 @@ import { RightSectionIndex } from '../components/RightSectionIndex';
 
 interface HomePageProps {
   onOpenSus: () => void;
+  scrollTo?: string;
 }
 
-export const HomePage: React.FC<HomePageProps> = ({ onOpenSus }) => {
+export const HomePage: React.FC<HomePageProps> = ({ onOpenSus, scrollTo }) => {
   const [projectFilter, setProjectFilter] = useState('All');
+
+  useEffect(() => {
+    if (scrollTo) {
+      const timer = setTimeout(() => {
+        const el = document.getElementById(scrollTo);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [scrollTo]);
 
   const handleSelectSkillFilter = (skill: string) => {
     setProjectFilter(skill);

@@ -58,6 +58,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSus }) => {
                 <HciMarker id="lens-01" className="absolute -top-3 -right-3" />
                 <a
                   href="#projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-mono font-bold text-xs uppercase tracking-wider hover:bg-accent/90 transition-all shadow-md min-h-[44px]"
                 >
                   <span>Explore Projects</span>
@@ -82,6 +86,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSus }) => {
               {/* Tertiary Contact CTA (Smooth scrolls and jumps to working form) */}
               <a
                 href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-accent text-xs font-mono text-muted hover:text-text transition-colors min-h-[44px]"
               >
                 <Mail size={15} />

@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSus, onOpenCommandPalette 
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       } else {
-        navigate(`/#${targetId}`);
+        navigate(`/${targetId}`);
       }
     } else {
       navigate(href);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { SusModal } from './components/SusModal';
@@ -76,11 +76,11 @@ export const App: React.FC = () => {
           <Route path="/" element={<HomePage onOpenSus={() => setSusModalOpen(true)} />} />
           
           {/* Section route aliases so navigating to /activities or /about always routes correctly */}
-          <Route path="/about" element={<Navigate to="/#about" replace />} />
-          <Route path="/academic" element={<Navigate to="/#academic" replace />} />
-          <Route path="/activities" element={<Navigate to="/#activities" replace />} />
-          <Route path="/projects" element={<Navigate to="/#projects" replace />} />
-          <Route path="/contact" element={<Navigate to="/#contact" replace />} />
+          <Route path="/about" element={<HomePage onOpenSus={() => setSusModalOpen(true)} scrollTo="about" />} />
+          <Route path="/academic" element={<HomePage onOpenSus={() => setSusModalOpen(true)} scrollTo="academic" />} />
+          <Route path="/activities" element={<HomePage onOpenSus={() => setSusModalOpen(true)} scrollTo="activities" />} />
+          <Route path="/projects" element={<HomePage onOpenSus={() => setSusModalOpen(true)} scrollTo="projects" />} />
+          <Route path="/contact" element={<HomePage onOpenSus={() => setSusModalOpen(true)} scrollTo="contact" />} />
 
           {/* Deep Pages */}
           <Route path="/projects/:slug" element={<ProjectDetailPage />} />
