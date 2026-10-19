@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lens-01",
+    "target": "hero-primary-cta",
+    "number": 1,
+    "principle": "Von Restorff Effect & Visual Hierarchy",
+    "theorist": "Hedwig von Restorff (1933) / Gestalt Psychology",
+    "definition": "When multiple similar objects are present, the one that differs from the rest will be most readily remembered and attended to.",
+    "application": "The primary 'Explore Projects' CTA uses a high-contrast warm amber accent (#FFB547 in dark / #B93A0A in light) with hard offset drafting shadow, while secondary actions use subtle outline borders to channel primary attention without cognitive competition."
+  },
+  {
+    "id": "lens-02",
+    "target": "hero-resume-cta",
+    "number": 2,
+    "principle": "Norman's Affordances & Signifiers",
+    "theorist": "Don Norman (Design of Everyday Things)",
+    "definition": "Signifiers communicate where the action should take place and the expected outcome before the action is executed.",
+    "application": "The resume download CTA explicitly indicates file format (PDF) and exact file size, preventing user hesitation about unexpected heavy downloads or unknown document types."
+  },
+  {
+    "id": "lens-03",
+    "target": "fitts-targets",
+    "number": 3,
+    "principle": "Fitts's Law",
+    "theorist": "Paul Fitts (1954)",
+    "definition": "The time required to rapidly move to a target area is a function of the ratio between the distance to the target and the width of the target.",
+    "application": "All interactive elements, buttons, navigation links, and filter chips maintain an accessible touch target area of at least 44x44px, minimizing target acquisition error across desktop and touchscreens."
+  },
+  {
+    "id": "lens-04",
+    "target": "hick-nav",
+    "number": 4,
+    "principle": "Hick-Hyman Law & Miller's Rule",
+    "theorist": "William Hick & Ray Hyman (1952) / George Miller (1956)",
+    "definition": "Decision time increases logarithmically with the number and complexity of choices available. Working memory capacity is roughly 7 ± 2 chunks.",
+    "application": "The top navigation bar is grouped into 5 primary semantic sections (About, Academic, Activities, Projects, Contact), reducing cognitive load and decision latency."
+  },
+  {
+    "id": "lens-05",
+    "target": "feedback-theme",
+    "number": 5,
+    "principle": "Immediate Feedback & State Visibility",
+    "theorist": "Jakob Nielsen (Heuristic #1)",
+    "definition": "The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.",
+    "application": "Theme toggles, HCI Lens activations, and filter selections produce immediate visual state shifts (under 100ms) with persisted localStorage preferences and accessible ARIA live announcements."
+  },
+  {
+    "id": "lens-06",
+    "target": "project-filters",
+    "number": 6,
+    "principle": "Shneiderman's Direct Manipulation & Dynamic Filtering",
+    "theorist": "Ben Shneiderman (Eight Golden Rules of Interface Design)",
+    "definition": "Provide rapid, incremental, reversible operations whose impact on the object of interest is immediately visible.",
+    "application": "Tag chips allow instant multi-criteria filtering of projects with real-time count badges and live result announcements for assistive technologies, eliminating full page reloads."
+  },
+  {
+    "id": "lens-07",
+    "target": "doherty-threshold",
+    "number": 7,
+    "principle": "Doherty Threshold & Perceived Performance",
+    "theorist": "Walter J. Doherty & Ahrvind J. Thadani (IBM, 1982)",
+    "definition": "Productivity soars when a computer and its users interact at a pace (<400ms) that ensures neither has to wait on the other.",
+    "application": "Command palette searching, lightbox expansions, and section jumps operate with instant sub-50ms local memory queries, maintaining continuous user engagement."
+  },
+  {
+    "id": "lens-08",
+    "target": "error-prevention-contact",
+    "number": 8,
+    "principle": "Error Prevention & Recovery",
+    "theorist": "Jakob Nielsen (Heuristics #5 and #9)",
+    "definition": "Carefully prevent problems from occurring in the first place, or help users recognize, diagnose, and recover from errors without data loss.",
+    "application": "The contact form enforces real-time inline semantic validation with accessible aria-errormessage bindings and preserves previously entered message text in state even if network transmission fails."
+  }
+]

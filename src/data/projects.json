@@ -1,0 +1,146 @@
+[
+  {
+    "id": "P-01",
+    "slug": "finscope",
+    "title": "FinScope",
+    "year": "2026",
+    "tagline": "End-to-End AI-Powered Financial-Statement Analysis & RAG Ingestion Platform",
+    "repo": "https://github.com/gaurang-2305/FinScope",
+    "liveDemo": "",
+    "tags": ["AI/ML", "Full-Stack", "FinTech", "RAG"],
+    "stack": [
+      "FastAPI",
+      "React",
+      "ChromaDB",
+      "Scikit-learn",
+      "PostgreSQL",
+      "Supabase",
+      "Google OAuth 2.0",
+      "JWT",
+      "pdfplumber",
+      "PyMuPDF",
+      "Tesseract OCR",
+      "Sentence-Transformers"
+    ],
+    "summary": "AI-powered financial-statement analysis platform turning unstructured PDF reports and SEC EDGAR 10-K/10-Q filings into structured, queryable data.",
+    "problem": "Financial statements (10-K, 10-Q, annual reports) are notoriously dense, published across disparate PDF formats, and burdened by heterogeneous GAAP vs IFRS accounting terminologies. Analysts spend 70% of their time manually transcribing balance sheets and cash flow disclosures rather than evaluating company viability.",
+    "solution": "Built a multi-engine ingestion pipeline using pdfplumber, PyMuPDF, and Tesseract OCR with semantic synonym mapping. Developed a 15+ ratio analytical engine, vector-based RAG search via ChromaDB and Sentence-Transformers, and ML distress forecasting to automate institutional-grade fundamental analysis in seconds.",
+    "keyFeatures": [
+      "Multi-Engine PDF Ingestion: pdfplumber and PyMuPDF text extraction with Tesseract OCR fallback for scanned disclosures.",
+      "GAAP/IFRS Synonym Taxonomy: LLM-driven field normalization mapping disparate accounting line items to standardized schemas.",
+      "15+ Automated Financial Ratios: Instant computation of current, quick, debt-to-equity, ROIC, and asset turnover metrics.",
+      "Contextual RAG Chatbot: Vector search over multi-hundred page filings using ChromaDB embeddings for precision clause Q&A.",
+      "Distress/Risk ML Scoring: Scikit-learn predictive classifier benchmarking insolvency risk against historical peer company profiles.",
+      "Enterprise Security: Google OAuth 2.0 and JWT session authorization with Supabase PostgreSQL row-level security."
+    ],
+    "whatILearned": "Key engineering insight: architecting deterministic fallback pipelines when LLM parsing encounters nested tabular balance sheets, and optimizing vector similarity thresholds for dense numerical footnotes.",
+    "coverImage": "/assets/projects/finscope/cover.jpg",
+    "screenshots": [
+      {
+        "url": "/assets/projects/finscope/screenshot-1.jpg",
+        "caption": "Interactive 10-K financial statement analytics dashboard with normalized balance sheet metrics."
+      },
+      {
+        "url": "/assets/projects/finscope/screenshot-2.jpg",
+        "caption": "AI Financial Assistant panel answering granular debt trend and footnote disclosure queries."
+      },
+      {
+        "url": "/assets/projects/finscope/screenshot-3.jpg",
+        "caption": "Solvency and capital structure ratio engine benchmarking multi-period performance curves."
+      }
+    ]
+  },
+  {
+    "id": "P-02",
+    "slug": "floatchat",
+    "title": "FloatChat",
+    "year": "2026",
+    "tagline": "Conversational Ocean-Intelligence Platform with Hybrid NL2SQL & AST Validation",
+    "repo": "https://github.com/Mokshii46/FLOATCHAT",
+    "liveDemo": "",
+    "tags": ["AI/ML", "Full-Stack", "Data Visualization", "NL2SQL", "RAG"],
+    "stack": [
+      "FastAPI",
+      "React",
+      "Leaflet",
+      "ChromaDB",
+      "PostgreSQL",
+      "SQLite",
+      "Python AST",
+      "Pytest"
+    ],
+    "summary": "Conversational ocean-intelligence platform turning natural-language queries into real-time insights from global ARGO float data.",
+    "problem": "Global oceanographic data from hundreds of ARGO autonomous floats is siloed in complex netCDF files and multi-table relational databases. Marine researchers and climate scientists had to write intricate multi-join spatial queries or custom Python scripts just to inspect sea surface salinity and thermocline anomalies.",
+    "solution": "Architected a hybrid NL2SQL + RAG engine with 18 zero-latency SQL templates, combined with an AST-based SQL validator that inspects parse trees to prevent SQL injection or destructive operations. Rendered 470+ floats on an interactive Leaflet 360-degree globe with voice input and dual persona workflows.",
+    "keyFeatures": [
+      "AST-Based SQL Validator: Parses generated SQL into Abstract Syntax Trees, guaranteeing only safe SELECT operations execute against production schemas.",
+      "Hybrid NL2SQL + RAG: 18 high-speed parameterized query templates with ChromaDB vector lookup and fallback LLM generation.",
+      "Dual-Persona Interface: 'Explorer' mode for high-level geographic summaries, and 'Researcher' mode for granular profile depths and CTD sensor calibration.",
+      "Interactive 360° Leaflet Map: Real-time spatial clustering and path trajectories for 470+ active global ARGO floats.",
+      "Anomaly Detection: Rolling z-score statistical monitoring identifying regional thermocline deviations and salinity spikes.",
+      "Rigorous Quality: 49-test pytest test suite maintaining a 100% pass rate across query generation and security boundaries."
+    ],
+    "whatILearned": "Key engineering insight: preventing generative hallucinations in spatial data queries through AST node whitelisting and client-side antimeridian projection handling.",
+    "coverImage": "/assets/projects/floatchat/cover.jpg",
+    "screenshots": [
+      {
+        "url": "/assets/projects/floatchat/screenshot-1.jpg",
+        "caption": "Interactive global ocean map with real-time ARGO float trajectory markers and sensor locations."
+      },
+      {
+        "url": "/assets/projects/floatchat/screenshot-2.jpg",
+        "caption": "Conversational NL2SQL input engine executing validated spatial queries against the float dataset."
+      },
+      {
+        "url": "/assets/projects/floatchat/screenshot-3.jpg",
+        "caption": "Ocean temperature depth profile and salinity sensor telemetry monitoring thermoclines."
+      }
+    ]
+  },
+  {
+    "id": "P-03",
+    "slug": "mental-health-system",
+    "title": "Mental Health System",
+    "year": "2025",
+    "tagline": "Comprehensive Student & Institutional Wellbeing Platform with AI Triaging",
+    "repo": "https://github.com/gaurang-2305/mental-health-system",
+    "liveDemo": "",
+    "tags": ["Full-Stack", "AI/ML", "Healthcare-Tech"],
+    "stack": [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "summary": "Full-stack mental health management platform for students, counselors and administrators.",
+    "problem": "University student wellness centers face acute counseling bottlenecks, manual appointment queues, and lack real-time visibility into campus stress trends until academic performance severely drops.",
+    "solution": "Built a 30+ module comprehensive management ecosystem featuring encrypted sentiment journaling, predictive stress indicators correlated with academic attendance, crisis alert routing, and role-based access for students, licensed counselors, and campus administrators.",
+    "keyFeatures": [
+      "30+ Modular Wellness Tools: Integrated mood tracking, symptom analysis, sleep logging, and sentiment-analyzed reflection journals.",
+      "AI Recommendation & Triaging: Correlates attendance markers with self-reported stress indicators to recommend proactive coping exercises.",
+      "Peer-Support & Conversational Assistant: Empathetic AI guidance bot offering immediate grounding techniques during acute anxiety episodes.",
+      "Crisis Alert Routing: Instant counselor notification triggered by critical sentiment keywords in journal entries.",
+      "Three-Tier RBAC: Strict privilege separation ensuring counselor medical notes remain confidential from student and administrator viewports.",
+      "Counselor Analytics: Aggregate weekly institutional wellbeing indices with exportable clinical compliance reports."
+    ],
+    "whatILearned": "Key engineering insight: architecting privacy-first HIPAA/student data models in Supabase with row-level security and designing compassionate UI affordances.",
+    "coverImage": "/assets/projects/mental-health-system/cover.jpg",
+    "screenshots": [
+      {
+        "url": "/assets/projects/mental-health-system/screenshot-1.jpg",
+        "caption": "Student wellness cockpit with daily check-in mood tracking, sleep quality, and stress trends."
+      },
+      {
+        "url": "/assets/projects/mental-health-system/screenshot-2.jpg",
+        "caption": "Empathetic reflection journal module with automated NLP sentiment triaging."
+      },
+      {
+        "url": "/assets/projects/mental-health-system/screenshot-3.jpg",
+        "caption": "Counselor clinical workstation with consultation booking queue and campus wellness insights."
+      }
+    ]
+  }
+]

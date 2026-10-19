@@ -1,0 +1,98 @@
+{
+  "institutions": [
+    {
+      "id": "vjti",
+      "degree": "B.Tech in Computer Engineering",
+      "institution": "Veermata Jijabai Technological Institute (VJTI), Mumbai",
+      "period": "Aug 2024 - Present (Third Year)",
+      "metricLabel": "CGPA",
+      "metricValue": "8.65 / 10.0",
+      "highlight": "State Rank 67 in MHT-CET Admission Merit",
+      "description": "Rigorous undergraduate curriculum emphasizing theoretical computer science, distributed software systems, algorithm optimization, and applied artificial intelligence."
+    },
+    {
+      "id": "prakash-college",
+      "degree": "Higher Secondary Education (HSC) & Competitive Entrance",
+      "institution": "Prakash College of Commerce and Science, Mumbai",
+      "period": "Aug 2022 - May 2024",
+      "metricLabel": "HSC Score",
+      "metricValue": "79.61%",
+      "highlight": "MHT-CET 99.98 Percentile | JEE Mains 98.33 Percentile",
+      "description": "Intensive coursework in Physics, Chemistry, and Mathematics, achieving top-tier state and national percentiles."
+    }
+  ],
+  "competitiveExams": [
+    {
+      "exam": "MHT-CET",
+      "score": "99.98 Percentile",
+      "rank": "State Rank 67 in Maharashtra",
+      "year": "2024",
+      "badge": "Top 0.02%"
+    },
+    {
+      "exam": "JEE Mains",
+      "score": "98.33 Percentile",
+      "rank": "All India Merit",
+      "year": "2024",
+      "badge": "Top 1.67%"
+    },
+    {
+      "exam": "Maharashtra HSC Board",
+      "score": "79.61%",
+      "rank": "First Class with Distinction",
+      "year": "2024",
+      "badge": "Science Stream"
+    }
+  ],
+  "coursework": [
+    {
+      "group": "Foundations",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Design and Analysis of Algorithms",
+        "Discrete Mathematics",
+        "Linear Algebra",
+        "Object Oriented Programming"
+      ]
+    },
+    {
+      "group": "Systems & Engineering",
+      "courses": [
+        "Operating Systems",
+        "Database Management System",
+        "Software Engineering"
+      ]
+    },
+    {
+      "group": "AI & Data",
+      "courses": [
+        "Artificial Intelligence",
+        "Database Management System",
+        "Statistical Modeling"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "MHT-CET Merit Certificate (State Rank 67)",
+      "issuer": "State Common Entrance Test Cell, Maharashtra",
+      "date": "June 2024",
+      "file": "/assets/academic/cert-mht-cet.svg",
+      "placeholder": true
+    },
+    {
+      "title": "JEE Mains Performance Certificate (98.33%ile)",
+      "issuer": "National Testing Agency (NTA)",
+      "date": "May 2024",
+      "file": "/assets/academic/cert-jee.svg",
+      "placeholder": true
+    },
+    {
+      "title": "VJTI Semester Academic Standing",
+      "issuer": "VJTI Mumbai Examination Cell",
+      "date": "2024 - 2025",
+      "file": "/assets/academic/cert-vjti.svg",
+      "placeholder": true
+    }
+  ]
+}

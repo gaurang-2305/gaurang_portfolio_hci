@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <rect width="1000" height="700" fill="#161A30"/>
+  <rect x="30" y="30" width="940" height="640" fill="none" stroke="#FFB547" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  <rect x="50" y="50" width="900" height="600" fill="none" stroke="#2A3050" stroke-width="1"/>
+  <circle cx="500" cy="200" r="50" fill="none" stroke="#FFB547" stroke-width="2"/>
+  <text x="500" y="215" font-family="'Fraunces', serif" font-size="40" font-weight="bold" fill="#FFB547" text-anchor="middle">&#10022;</text>
+  <text x="500" y="330" font-family="'Fraunces', serif" font-size="28" font-weight="bold" fill="#F2EFE8" text-anchor="middle">JEE Mains Scorecard (98.33%ile)</text>
+  <text x="500" y="380" font-family="'Inter', sans-serif" font-size="18" fill="#A9AECB" text-anchor="middle">National Testing Agency (NTA)</text>
+  <text x="500" y="520" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFB547" text-anchor="middle">[ VERIFIED ACADEMIC RECORD &bull; OFFICIAL DOCUMENT PLACEHOLDER ]</text>
+</svg>

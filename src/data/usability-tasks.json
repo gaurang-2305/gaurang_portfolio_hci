@@ -1,0 +1,42 @@
+[
+  {
+    "id": "T1",
+    "name": "Find FinScope's Tech Stack",
+    "prompt": "Navigate to the Projects section, locate the FinScope project card, and identify the vector database and OCR libraries utilized in the architecture.",
+    "targetSection": "#projects",
+    "expectedAction": "Locate ChromaDB and Tesseract OCR / PyMuPDF within FinScope stack chips or detail view.",
+    "benchmarkSeconds": 25
+  },
+  {
+    "id": "T2",
+    "name": "Download the Resume",
+    "prompt": "Locate and trigger the primary 'Download Resume' action on the site and verify the indicated file format and size.",
+    "targetSection": "#hero",
+    "expectedAction": "Click Download Resume CTA or access via Command Palette (Ctrl+K).",
+    "benchmarkSeconds": 15
+  },
+  {
+    "id": "T3",
+    "name": "Filter Projects by 'AI/ML'",
+    "prompt": "In the Projects section, filter the project catalog to display only systems tagged with 'AI/ML' and verify the filtered result count.",
+    "targetSection": "#projects",
+    "expectedAction": "Click the 'AI/ML' filter chip and observe the filtered spec sheet cards.",
+    "benchmarkSeconds": 12
+  },
+  {
+    "id": "T4",
+    "name": "Open Screenshot Lightbox & Dismiss",
+    "prompt": "Navigate into any project detail view or screenshot gallery, open a full-resolution screenshot in the modal lightbox, inspect the caption, and dismiss it via keyboard (Esc) or close button.",
+    "targetSection": "/projects/finscope",
+    "expectedAction": "Trigger image expansion lightbox and dismiss with focus return.",
+    "benchmarkSeconds": 20
+  },
+  {
+    "id": "T5",
+    "name": "Send a Message via Contact Form",
+    "prompt": "Navigate to the Contact section, complete the required fields with test input (name, email, message subject), and test the form submission feedback.",
+    "targetSection": "#contact",
+    "expectedAction": "Fill valid fields, trigger submission, and view instant inline status confirmation.",
+    "benchmarkSeconds": 45
+  }
+]

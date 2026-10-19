@@ -1,0 +1,59 @@
+[
+  {
+    "id": "act-01",
+    "commitHash": "8f2a1b9",
+    "type": "Open Source",
+    "title": "Hacktoberfest 2025 Open-Source Contributor",
+    "date": "October 2025",
+    "tag": "Git Pull Request",
+    "summary": "Contributed verified pull requests to open-source GitHub repositories, collaborating with external maintainers on code reviews, bug fixes, and documentation improvements.",
+    "details": "Submitted multiple high-impact pull requests to active open-source repositories during the Hacktoberfest 2025 campaign. Navigated diverse codebases, adhered to strict contribution guidelines, resolved merge conflicts, and responded constructively to maintainer feedback. Verified compliance with continuous integration pipelines and automated unit testing suites.",
+    "links": [
+      {
+        "label": "GitHub Profile Activity",
+        "url": "https://github.com/gaurang-2305"
+      }
+    ],
+    "status": "Verified Contributor",
+    "prPending": true
+  },
+  {
+    "id": "act-02",
+    "commitHash": "c49d3e1",
+    "type": "Merit Achievement",
+    "title": "State Rank 67 in Maharashtra (MHT-CET Entrance Examination)",
+    "date": "June 2024",
+    "tag": "State Honor",
+    "summary": "Ranked 67th out of over 300,000+ candidates statewide with a 99.98 percentile in the engineering entrance examination.",
+    "details": "Demonstrated sustained problem-solving discipline and analytical speed under competitive examination constraints. Secured admission into the Department of Computer Engineering at Veermata Jijabai Technological Institute (VJTI), Mumbai.",
+    "links": [],
+    "status": "State Rank 67",
+    "prPending": false
+  },
+  {
+    "id": "act-03",
+    "commitHash": "e7104b2",
+    "type": "Campus & Technical Clubs",
+    "title": "Technical Club & Hackathon Initiatives",
+    "date": "2024 - Present",
+    "tag": "Campus Life",
+    "summary": "[Open Slot] Active participation in university coding challenges, technical symposia, and engineering hackathons at VJTI.",
+    "details": "Participating in collaborative campus software sprints and peer code reviews. Detailed project writeups and awards will be updated upon release.",
+    "links": [],
+    "status": "Ongoing / Open Slot",
+    "prPending": false
+  },
+  {
+    "id": "act-04",
+    "commitHash": "b319aa5",
+    "type": "Community & Volunteering",
+    "title": "Peer Mentorship & Community Engagement",
+    "date": "2024 - Present",
+    "tag": "Volunteering",
+    "summary": "[Open Slot] Mentoring junior peers in fundamental data structures, algorithms, and web development fundamentals.",
+    "details": "Assisting collegiate peers with debugging, version control workflows with Git, and clean architecture practices.",
+    "links": [],
+    "status": "Ongoing / Open Slot",
+    "prPending": false
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Languages",
+    "description": "Core programming and query languages used across systems and AI pipelines",
+    "skills": ["C++", "Python", "JavaScript", "SQL", "HTML5", "CSS3"]
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "description": "Production web, API, and UI frameworks for full-stack engineering",
+    "skills": ["React", "FastAPI", "Node.js", "Express.js", "Tailwind CSS"]
+  },
+  {
+    "category": "Databases & Vector Stores",
+    "description": "Relational, embedded, and semantic vector database technologies",
+    "skills": ["PostgreSQL", "SQLite", "MySQL", "ChromaDB"]
+  },
+  {
+    "category": "Developer Tools",
+    "description": "Version control, cloud development, and development environments",
+    "skills": ["Git", "GitHub", "VS Code", "Google Colab"]
+  },
+  {
+    "category": "Core Concepts",
+    "description": "Foundational computer science principles, system design, and AI paradigms",
+    "skills": ["DSA", "OOP", "RAG", "Operating Systems", "DBMS"]
+  }
+]
