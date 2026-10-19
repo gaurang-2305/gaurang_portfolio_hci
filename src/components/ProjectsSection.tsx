@@ -5,6 +5,7 @@ import { GithubIcon } from './Icons';
 import projectsDataRaw from '../data/projects.json';
 import type { Project } from '../types';
 import { HciMarker } from './HciMarker';
+import { getAssetUrl } from '../utils/assets';
 
 const projectsData = projectsDataRaw as Project[];
 
@@ -140,7 +141,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ initialFilter 
                 {/* Blueprint Schematic Header Visual */}
                 <div className="relative aspect-[16/10] bg-bg overflow-hidden border-b border-line">
                   <img
-                    src={project.coverImage}
+                    src={getAssetUrl(project.coverImage)}
                     alt={`${project.title} architectural blueprint`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

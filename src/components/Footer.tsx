@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Award, FileText, Heart } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -53,7 +54,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/assets/profile/Gaurang_Upadhyay_Resume.pdf" download className="hover:text-accent flex items-center gap-1.5 transition-colors">
+                <a href={getAssetUrl('/assets/profile/Gaurang_Upadhyay_Resume.pdf')} download className="hover:text-accent flex items-center gap-1.5 transition-colors">
                   <FileText size={13} className="text-accent" />
                   <span>Download Resume (PDF, 142 KB)</span>
                 </a>

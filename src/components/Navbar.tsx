@@ -35,7 +35,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSus, onOpenCommandPalette 
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-        window.history.pushState(null, '', `/#${targetId}`);
       } else {
         navigate(`/#${targetId}`);
       }
@@ -48,7 +47,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSus, onOpenCommandPalette 
     if (location.pathname === '/') {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      window.history.pushState(null, '', '/');
     }
   };
 

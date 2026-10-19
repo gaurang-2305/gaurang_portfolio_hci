@@ -6,6 +6,7 @@ import { useHciLens } from '../context/HciLensContext';
 import projectsDataRaw from '../data/projects.json';
 import blogDataRaw from '../data/blog-posts.json';
 import type { Project, BlogPost } from '../types';
+import { getAssetUrl } from '../utils/assets';
 
 const projects = projectsDataRaw as Project[];
 const blogPosts = blogDataRaw as BlogPost[];
@@ -189,7 +190,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
       icon: <Download size={16} className="text-accent" />,
       action: () => {
         const link = document.createElement('a');
-        link.href = '/assets/profile/Gaurang_Upadhyay_Resume.pdf';
+        link.href = getAssetUrl('/assets/profile/Gaurang_Upadhyay_Resume.pdf');
         link.download = 'Gaurang_Upadhyay_Resume.pdf';
         link.click();
         onClose();

@@ -3,6 +3,7 @@ import { ArrowRight, Download, Mail, Award } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { HciMarker } from './HciMarker';
 import profile from '../data/profile.json';
+import { getAssetUrl } from '../utils/assets';
 
 interface HeroProps {
   onOpenSus: () => void;
@@ -68,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSus }) => {
               <div className="relative">
                 <HciMarker id="lens-02" className="absolute -top-3 -right-3" />
                 <a
-                  href={profile.resumePdf}
+                  href={getAssetUrl(profile.resumePdf)}
                   download="Gaurang_Upadhyay_Resume.pdf"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-accent text-xs font-mono text-text transition-colors shadow-xs min-h-[44px]"
                   title="Download Gaurang's Resume PDF (142 KB)"
@@ -158,7 +159,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenSus }) => {
                 {/* Photo Viewport */}
                 <div className="relative rounded-xl overflow-hidden bg-bg aspect-[4/5] flex items-center justify-center border border-line/50">
                   <img
-                    src="/assets/profile/photo.jpg"
+                    src={getAssetUrl('/assets/profile/photo.jpg')}
                     alt="Gaurang Upadhyay - VJTI Mumbai"
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                     loading="eager"

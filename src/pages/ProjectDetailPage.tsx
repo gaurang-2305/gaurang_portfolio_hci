@@ -4,6 +4,7 @@ import { ArrowLeft, ExternalLink, Layers, CheckCircle2, AlertTriangle, X, Chevro
 import { GithubIcon } from '../components/Icons';
 import projectsDataRaw from '../data/projects.json';
 import type { Project } from '../types';
+import { getAssetUrl } from '../utils/assets';
 
 const projects = projectsDataRaw as Project[];
 
@@ -226,7 +227,7 @@ export const ProjectDetailPage: React.FC = () => {
                   >
                     <div className="relative aspect-[16/10] bg-bg overflow-hidden border-b border-line">
                       <img
-                        src={shot.url}
+                        src={getAssetUrl(shot.url)}
                         alt={shot.caption}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                       />
@@ -363,7 +364,7 @@ export const ProjectDetailPage: React.FC = () => {
             {/* Main Lightbox Image Viewport */}
             <div className="relative w-full aspect-[16/10] bg-surface rounded-lg overflow-hidden border-2 border-line flex items-center justify-center">
               <img
-                src={project.screenshots[lightboxIndex].url}
+                src={getAssetUrl(project.screenshots[lightboxIndex].url)}
                 alt={project.screenshots[lightboxIndex].caption}
                 className="w-full h-full object-contain"
               />
